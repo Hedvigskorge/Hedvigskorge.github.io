@@ -1,0 +1,13 @@
+
+body{
+  background-color: lavenderblush;
+}
+h1{text-align: center;
+  color:brown;
+  width: 300px;
+  border: 8px solid indianred;
+  padding: 10px;
+  margin:1px
+}
+h2{text-align: center;color:blue;background-color: lightgreen;font-size: 25;}
+h3{text-align: left;color:purple;background-color: lightseagreen;}
