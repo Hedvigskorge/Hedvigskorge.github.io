@@ -1,0 +1,23 @@
+body{
+  background-color: lightblue;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+h1{text-align: center;
+  color:brown;
+  font-size: 60px;
+}
+
+
+
+main>p{
+  background-color: cadetblue;
+  text-align: center;
+  padding: 30px;
+  }
+  main{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 3px;
+  }
