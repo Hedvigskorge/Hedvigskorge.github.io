@@ -1,0 +1,21 @@
+body{
+  background-color: lightblue;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+h1{text-align: center;
+  color:brown;
+  font-size: 60px;
+}
+p::first-letter{font-size: 30px;}
+
+h2:hover{background-color: yellow;}
+
+img:hover{width:200px; height: 200px;}
+
+#hovedoverskrift{color:darkblue}
+#hovedoverskrift:hover{font-size: 100px}
+.underoverskrifter{font-size: 20px}
+
+
+ul li{background-color: orange;}

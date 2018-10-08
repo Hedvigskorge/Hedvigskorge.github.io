@@ -1,0 +1,25 @@
+body {
+  background-color: deepskyblue;
+  color: white;
+  font-family: sans-serif;
+  margin: 35px 25px 0px 25px;
+  }
+p,h2 {
+  padding: 10px;
+
+  }
+.topsection{
+  background-color: blue;
+  color: lightgrey;
+  }
+.bottomsection {
+  background-color: lightgrey;
+  color: blue;
+  }
+#punktto {
+  text-decoration: underline;
+  color: lightgreen;
+  }
+#punkt3avsnitt2 {
+  color: gray;
+}
