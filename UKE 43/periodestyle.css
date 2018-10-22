@@ -1,0 +1,96 @@
+body{
+  text-align: center;
+  max-width: 980px;
+  margin: auto;
+  margin-top: 4px;
+}
+
+
+#innhold{
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 4px;
+  }
+
+#innhold div{
+  border: 2px solid black;
+  padding: 15px;
+  }
+
+.grønn{
+  background:lightgreen;
+  }
+
+.blå{
+  background:lightblue;
+  }
+
+.rød{
+  background:indianred;
+  }
+
+.gul{
+  background:yellow;
+  }
+
+.grå{
+  background:lightgrey;
+  }
+
+.brun{
+  background:tan;
+  }
+
+.luft{
+  grid-column: 2 / 18;
+  opacity: 0;
+  }
+
+.rosa{
+  background:lightpink;
+  }
+
+.orange{
+  background:sandybrown;
+  }
+
+.luftto{
+  grid-column: 3 / 13;
+  opacity: 0;
+  }
+
+.lufttre{
+  grid-column: 3 / 13;
+  opacity: 0;
+  }
+
+.luftfire{opacity: 0;
+  }
+
+.luftfem{opacity: 0;
+  }
+
+.luftseks{
+  opacity: 0;
+  grid-column: 1 / 4
+  }
+
+.luftsyv{
+  opacity: 0;
+  grid-column: 1 / 4;
+  }
+
+.luftåtte{
+  opacity: 0;
+  grid-column: 1 / 19;
+  height: 0px;
+  }
+
+.foilett{
+  background: palevioletred;
+  }
+
+.lilla{
+  background: plum;
+  }
+}
