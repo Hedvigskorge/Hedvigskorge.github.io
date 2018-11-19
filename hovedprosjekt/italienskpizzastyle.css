@@ -3,7 +3,7 @@ nav{
   max-width: 980px;
   margin: auto;
   margin-top: 4px;
-}
+  }
 #navigasjon{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -17,10 +17,10 @@ nav{
   color: darkmagenta;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-}
+  }
 .logo{
   margin-top: 70px;
-}
+  }
 .språk{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -46,8 +46,7 @@ nav{
   padding-left: 50px;
   padding-right: 50px;
   border : 1px solid dimgrey;
-}
-
+  }
 
 body{
   text-align: center;
@@ -55,11 +54,31 @@ body{
   margin: auto;
   margin-top: 4px;
   background-color: slategrey;
-}
-#meny{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  grid-auto-rows: minmax(350px, auto);
+  }
 
+.menyvalg{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  border: 1px solid black;
+  text-align: left;
+  }
+.menyvalg p{
+  margin-left: 50px;
+  }
+
+.menyvalg b{
+  color:darkmagenta;
+  margin-left: 50px;
+  margin-top: 25px;
+  }
+
+.menyvalg valg{color: darkmagenta;}
+
+footer{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  }
+footer p{
+  color: darkmagenta;
   }
