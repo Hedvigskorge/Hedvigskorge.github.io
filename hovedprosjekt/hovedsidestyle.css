@@ -66,6 +66,9 @@ body{
   border: 1px solid black;
   padding: 100px;
   }
+.stor img{
+  width:750px;
+}
 
 .stor{
   grid-column: 1 / 4;
