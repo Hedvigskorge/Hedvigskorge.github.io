@@ -1,9 +1,9 @@
 nav{
   text-align: center;
-  max-width: 980px;
+  max-width: 1300px;
   margin: auto;
   margin-top: 4px;
-  }
+}
 #navigasjon{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -17,17 +17,20 @@ nav{
   color: darkmagenta;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  font-size: 22px;
   }
+
+a{color:darkmagenta;}
 .logo{
   margin-top: 70px;
-  }
+}
 .språk{
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   }
 .språk p{
-  margin-top: 140px;
+  margin-top: 165px;
   }
 .snareveier{
   grid-column: 3 / 5;
@@ -36,7 +39,7 @@ nav{
   grid-gap: 2px;
   }
 .snareveier p{
-  margin-top: 140px;
+  margin-top: 165px;
   }
 
 .frame{
@@ -45,18 +48,84 @@ nav{
   margin-bottom: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  border : 1px solid dimgrey;
-  }
+  border : 2px solid dimgrey;
+}
 
 body{
-  text-align: left;
-  max-width: 990px;
+  text-align: center;
+  max-width: 1300px;
   margin: auto;
   margin-top: 4px;
   background-color: slategrey;
   }
-
 main{
   margin: 30px;
   margin-bottom: 50px;
+}
+
+
+
+#historie{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+  grid-auto-rows: minmax(100px, auto);
+  }
+#historie div{
+  /*font-size: 18px;*/
+  }
+
+.en {
+  grid-row: 1 / 3;
+}
+.en img{
+  width: 260px;
+  height: 250px;
+}
+
+.to{
+  grid-column: 2 / 4;
+  background-color: lightgrey;
+  font-size: 35px;
+  text-align: center;
+}
+
+.tre {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.fire{
+  background-color: lightgrey;
+  font-size: 35px;
+}
+
+.seks img{
+  height: 300px;
+  width: 270px;
+}
+
+.syv{
+  grid-column: 1 / 3;
+}
+
+.åtte{
+  background-color: lightgrey;
+  font-size: 35px;
+}
+
+.ni{
+  grid-column: 1 / 4;
+  background-color: lightgrey;
+  font-size: 35px;
+}
+.ti{
+  grid-column: 1 / 4;
+}
+.elleve{
+  grid-column: 1 / 4;
+}
+.elleve img{
+  height: 450px;
+  width: 885px;
 }
