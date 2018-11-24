@@ -69,12 +69,14 @@ body{
   }
 .menyvalg p{
   margin-left: 50px;
+  font-size: 18px;
   }
 
 .menyvalg b{
   color:darkmagenta;
   margin-left: 50px;
   margin-top: 25px;
+  font-size: 23px;
   }
 
 .menyvalg valg{color: darkmagenta;}
@@ -85,4 +87,5 @@ footer{
   }
 footer p{
   color: darkmagenta;
+  font-size: 18px;
   }
