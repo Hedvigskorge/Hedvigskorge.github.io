@@ -3,7 +3,7 @@ nav{
   max-width: 1300px;
   margin: auto;
   margin-top: 4px;
-}
+  }
 #navigasjon{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -19,11 +19,10 @@ nav{
   border-top: 1px solid black;
   font-size: 22px;
   }
-
 a{color:darkmagenta;}
 .logo{
   margin-top: 70px;
-}
+  }
 .språk{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -41,7 +40,6 @@ a{color:darkmagenta;}
 .snareveier p{
   margin-top: 165px;
   }
-
 .frame{
   background-color: white;
   margin-top: 30px;
@@ -49,8 +47,7 @@ a{color:darkmagenta;}
   padding-left: 50px;
   padding-right: 50px;
   border : 2px solid dimgrey;
-}
-
+  }
 body{
   text-align: center;
   max-width: 1300px;
@@ -58,7 +55,6 @@ body{
   margin-top: 4px;
   background-color: slategrey;
   }
-
 #delivery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,31 +64,26 @@ body{
   margin-right: 90px;
   margin-top: 40px;
   }
-
 .en{
   margin-top: 40px;
   font-size: 30px;
   font-family: fantasy;
-}
-
+  }
 .to{
   grid-column: 2 / 4;
-}
-
+  }
 main{
   font-size: 23px;
-}
-
+  }
 footer{
-  background-color: lightgrey;
+  background-color: linen;
   font-size: 23px;
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
-
-}
-
+  border: 8px solid olive;
+  }
 footer p{
-  margin: 4px;
-}
+  margin: 6px;
+  }

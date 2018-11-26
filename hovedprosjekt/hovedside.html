@@ -6,40 +6,80 @@
     <title>Pizzastua</title>
   </head>
   <body>
-  <div class="frame">
-  <nav>
-    <div id="navigasjon">
-        <div class="logo"><img src="bilder/pizzastua.jpg"></div>
-        <div class="språk">
-          <p>NO</p>
-          <p>EN</p>
+    <div class="frame">
+      <nav>
+        <div id="navigasjon">
+            <div class="logo"><img src="bilder/pizzastua.jpg"></div>
+            <div class="språk">
+              <p>NO</p>
+              <p>EN</p>
+            </div>
+            <div class="snareveier">
+              <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/hovedside.html">Hjem</a></p>
+              <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/meny.html">Meny</a></p>
+              <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/omoss.html">Om oss</a></p>
+              <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/takeaway.html">Take Away</a></p>
+            </div>
         </div>
-        <div class="snareveier">
-          <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/hovedside.html">Hjem</a></p>
-          <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/meny.html">Meny</a></p>
-          <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/omoss.html">Om oss</a></p>
-          <p><a href="file:///Users/hedvigskorge/Documents/GitHub/Hedvigskorge.github.io/hovedprosjekt/takeaway.html">Take Away</a></p>
-        </div>
-    </div>
-  </nav>
-    <br><br>
-    <div id="innhold">
-      <div class="stor"><img src="bilder/godsmak-slider.jpg"></div>
-      <div class="mellom">måndens gourmet</div>
-      <div class="lang">
-        <b>Kontaktinfo</b>
-        <p>Trekk inn i varmen i vårt hyggelige lokale i Asker sentrum</p>
-        <p>Adresse: Alfheim 7</p>
-        <img src="bilder/lokale.jpg">
+      </nav>
+      <main>
         <br><br>
-        <b>Åpningstider</b>
-        <p>Mandag - Torsdag 15.00 - 22.00</p>
-        <p>Fredag-Lørdag 15.00 - 23.00</p>
-        <p>Søndag & Helligdager 14.00 - 22.00</p>
-      </div>
-      <div class="mellom">tilbud</div>
+          <div class="stor">
+            <img class="slideshow" src="bilder/godsmak-slider.jpg">
+            <img class="slideshow" src="bilder/ekstra-slide.jpg">
+            <img class="slideshow" src="bilder/smaken-slide.jpg">
+            <img class="slideshow" src="bilder/slidermåendens.jpg">
+          </div>
+          <br><br>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        <script> //Har ikke lært dette, men fant et eksempel på nett
+          var slideIndex = 0;
+          carousel();
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slideshow");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1}
+              x[slideIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+              }
+        </script>
+        <br><br><br><br>
+        <div id="innhold">
+          <div class="mellom"><img src="bilder/MG.jpg"></div>
+          <div class="liten">
+            <p><i><b>Trekk inn i varmen i vårt hyggelige lokale i Asker sentrum</i></b></p>
+            <br>
+            <img src="bilder/lokale.jpg">
+            <br><br>
+            <b>Åpningstider</b>
+            <p>Mandag - Torsdag 15.00 - 22.00</p>
+            <p>Fredag-Lørdag 15.00 - 23.00</p>
+            <p>Søndag & Helligdager 14.00 - 22.00</p>
+          </div>
+          <div class="mellom"><img src="bilder/student.jpg"></div>
+          <div class="kontaktinfo">
+            <br>
+            <b>Kontaktinfo</b>
+            <p>Pizzastua AS</p>
+            <p>Grindegården, Alfheim 7</p>
+            <p>1384 Asker</p>
+            <br>
+            <p>Telefon: 66 79 46 11</p>
+            <p>E-post: post@pizzastua.no</p>
+            <p>Faks:     66 79 19 19</p>
+          </div>
+          <br>
+      </main>
     </div>
-    <br><br>
   </div>
   </body>
 </html>
