@@ -59,7 +59,40 @@ body{
   background-color: slategrey;
   }
 
-main{
-  font-size: 19px;
+#delivery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 40px;
+  }
 
+.en{
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.to{
+  grid-column: 2 / 4;
+}
+
+main{
+  font-size: 23px;
+}
+
+footer{
+  background-color: lightgrey;
+  font-size: 23px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+footer p{
+  margin: 4px;
 }

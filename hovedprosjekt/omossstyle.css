@@ -79,7 +79,7 @@ main{
   grid-row: 1 / 3;
 }
 .en img{
-  width: 300px;
+  width: 320px;
   height: 320px;
 }
 
@@ -93,7 +93,7 @@ main{
 .tre {
   grid-column: 2 / 4;
   grid-row: 2;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .fire{
@@ -104,17 +104,17 @@ main{
 }
 
 .fem{
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .seks img{
   height: 300px;
-  width: 300px;
+  width: 310px;
 }
 
 .syv{
   grid-column: 1 / 3;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .åtte{
@@ -129,7 +129,7 @@ main{
 }
 .ti{
   grid-column: 1 / 4;
-  font-size: 19px;
+  font-size: 20px;
 }
 .elleve{
   grid-column: 1 / 4;

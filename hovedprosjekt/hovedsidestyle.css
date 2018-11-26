@@ -67,7 +67,10 @@ body{
 #innhold div{
   border: 1px solid black;
   padding: 15px;
+  font-size: 19px;
   }
+
+
 .stor img{
   width:1100px;
 }
