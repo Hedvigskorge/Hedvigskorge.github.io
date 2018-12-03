@@ -19,7 +19,9 @@ nav{
   border-top: 1px solid black;
   font-size: 22px;
   }
-a{color:darkmagenta;}
+a{color:darkmagenta;
+  text-decoration: none;
+  }
 .logo{
   margin-top: 70px;
   }
@@ -55,25 +57,14 @@ body{
   margin-top: 4px;
   background-color: slategrey;
   }
-.stor{
-  grid-column: 1 / 4;
-  }
-.dot {
-  text-align:center;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  }
+
 
 #innhold{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 50px;
   }
 #innhold div{
   font-size: 20px;
@@ -93,12 +84,41 @@ body{
   margin: 7px;
   }
 
+  * {box-sizing: border-box;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
 
-/*skal fikse bildestørrelsen i photoshop*/
-.stor img{
-  width:1195px;
-  }
-.mellom img{
-  width: 770px;
-  height: 380px;
-  }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1195px;
+    position: relative;
+    margin: auto;
+    }
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+  .active {
+    background-color: #717171;
+    }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }

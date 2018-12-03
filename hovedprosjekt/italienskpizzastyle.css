@@ -20,7 +20,9 @@ nav{
   font-size: 22px;
   }
 
-a{color:darkmagenta;}
+a{color:darkmagenta;
+  text-decoration: none;
+  }
 .logo{
   margin-top: 70px;
 }
@@ -58,6 +60,7 @@ body{
   margin-top: 4px;
   background-color: slategrey;
   }
+
 
 .menyvalg{
   display: grid;

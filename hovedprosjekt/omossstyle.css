@@ -19,7 +19,9 @@ nav{
   border-top: 1px solid black;
   font-size: 22px;
   }
-a{color:darkmagenta;}
+a{color:darkmagenta;
+  text-decoration: none;
+  }
 .logo{
   margin-top: 70px;
   }
