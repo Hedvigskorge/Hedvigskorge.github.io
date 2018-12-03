@@ -111,17 +111,3 @@ main{
 .elleve{
   grid-column: 1 / 4;
   }
-
-/*skal fikse bildestørrelsen i photoshop*/
-.en img{
-  width: 320px;
-  height: 320px;
-  }
-.elleve img{
-  height: 450px;
-  width: 885px;
-  }
-.seks img{
-  height: 300px;
-  width: 310px;
-  }
