@@ -51,7 +51,7 @@ p{
   }
 img{
   margin:0px;
-}
+  }
 .liten{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -82,4 +82,4 @@ img{
 footer{
   text-align: left;
   background-color: darkgrey;
-}
+  }
