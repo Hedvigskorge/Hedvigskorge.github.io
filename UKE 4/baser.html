@@ -5,21 +5,19 @@
     <title></title>
   </head>
   <body>
-
-  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyAurqH9_TGuVOZnexcXzit9NxXVDtis5i4",
-      authDomain: "it01-365e9.firebaseapp.com",
-      databaseURL: "https://it01-365e9.firebaseio.com",
-      projectId: "it01-365e9",
-      storageBucket: "it01-365e9.appspot.com",
-      messagingSenderId: "842573967907"
-    };
-    firebase.initializeApp(config);
-  </script>
-
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAurqH9_TGuVOZnexcXzit9NxXVDtis5i4",
+        authDomain: "it01-365e9.firebaseapp.com",
+        databaseURL: "https://it01-365e9.firebaseio.com",
+        projectId: "it01-365e9",
+        storageBucket: "it01-365e9.appspot.com",
+        messagingSenderId: "842573967907"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script>
       const db = firebase.database();
       const kontaktliste = db.ref("kontaktliste")
@@ -31,18 +29,16 @@
             "skole":"Sandvika vgs"
           }
         }
-        )
-
+      )
       kontaktliste.push(
         {"ID":{
           "navn":"Emma Jahre",
           "adresse":"Helsethagan 59",
           "alder":"17",
           "skole":"Sandvika vgs"
+          }
         }
-      }
-        )
+      )
     </script>
-
   </body>
 </html>
