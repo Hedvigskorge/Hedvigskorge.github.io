@@ -20,38 +20,28 @@
     </script>
     <script>
       const db = firebase.database();
-      const kontaktliste = db.ref("nummer")
+      const kontaktliste = db.ref("kontaktliste")
 
       kontaktliste.push(
         {"ID":{
             "navn":"Hedvig Skorge",
             "adresse":"Konvallveien 16",
             "alder":"18",
-            "skole":"Sandvika vgs"
+            "skole":"Sandvika vgs",
             "nummer":"41546624"
+            }
           }
-        }
-      )
+        )
       kontaktliste.push(
         {"ID":{
           "navn":"Emma Jahre",
           "adresse":"Helsethagan 59",
           "alder":"17",
-          "skole":"Sandvika vgs"
+          "skole":"Sandvika vgs",
           "nummer":"46796799"
+            }
           }
-        }
-      )
-      kontaktliste.push(
-        {"ID":{
-          "navn":"Morten Johan",
-          "adresse":"Bjørnegård",
-          "alder":"18",
-          "skole":"Sandvika vgs"
-          "nummer":"94835638"
-          }
-        }
-      )
+        )
 
     </script>
   </body>
