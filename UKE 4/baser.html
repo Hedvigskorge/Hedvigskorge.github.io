@@ -22,27 +22,26 @@
       const db = firebase.database();
       const kontaktliste = db.ref("kontaktliste")
 
-      kontaktliste.push(
+      const hedvigS = kontaktliste.child("41546624")
+      hedvigS.set(
         {"ID":{
             "navn":"Hedvig Skorge",
             "adresse":"Konvallveien 16",
             "alder":"18",
             "skole":"Sandvika vgs",
-            "nummer":"41546624"
             }
           }
         )
-      kontaktliste.push(
+      const EmmaJ = kontaktliste.child("46796799")
+      EmmaJ.set(
         {"ID":{
           "navn":"Emma Jahre",
           "adresse":"Helsethagan 59",
           "alder":"17",
           "skole":"Sandvika vgs",
-          "nummer":"46796799"
             }
           }
         )
-
     </script>
   </body>
 </html>
