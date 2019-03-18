@@ -1,0 +1,82 @@
+nav{
+  text-align: center;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 4px;
+  }
+.snareveier{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  position: relative;
+  }
+.snareveier div{
+  padding: 5px;
+  }
+.snareveier img{
+  width: 50px;
+  height: 40px;
+  }
+#navigasjon p{
+    font-size: 22px;
+  }
+a{color:black;
+  text-decoration: none;
+  }
+
+.dropdown-innhold{
+  display:none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.snareveier:hover .dropdown-innhold{
+  display:block;
+}
+
+main{
+  text-align: center;
+}
+.info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  }
+.info p{
+  font-size: 22px;
+  color: dimgrey;
+}
+
+
+
+
+footer{
+  background-color: WhiteSmoke;
+  text-align: center;
+  max-width: 1450px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer p{
+  font-family: fantasy;
+}
+footer h1{
+  font-family: fantasy;
+  font-size: 30px;
+}
+footer img{
+  height: 70px;
+  width: 70px;
+}
+
+.kontaktinfo{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  }

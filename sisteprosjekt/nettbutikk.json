@@ -1,0 +1,247 @@
+{
+ "varer" : {
+    "genser" : {
+      "genser001" : {
+        "navn" : "CERRAL STRIKKEGENSER",
+        "merke" : "Gestuz",
+        "modell" : "Strikkegenser",
+        "farge" : "oransje",
+        "pris" : 1499,
+        "bilde" : "gestuzgenser.jpg"
+      },
+      "genser002" : {
+        "navn" : "KAYLEE FERSKENFARGET STRIKKEGENSER",
+        "merke" : "Maud",
+        "modell" : "Strikkegenser",
+        "farge" : "fersken",
+        "pris" : 2199,
+        "bilde" : "maudgenser.jpg"
+      },
+      "genser003" : {
+        "navn" : "HANG ON NEON ORANGE HETTEGENSER",
+        "merke" : "Holzweiler",
+        "modell" : "Hettegenser",
+        "farge" : "oransje",
+        "pris" : 1999,
+        "bilde" : "holzweilergenser.jpg"
+      },
+      "genser004" : {
+        "navn" : "KNIT BOAT NECK HVIT GENSER",
+        "merke" : "Stenstroms",
+        "modell" : "genser",
+        "farge" : "hvit",
+        "pris" : 1199,
+        "bilde" : "stenstromsgenser.jpg"
+      },
+      "genser005" : {
+        "navn" : "TINE ROSA CARDIGAN",
+        "merke" : "Holzweiler",
+        "modell" : "Cardigan",
+        "farge" : "rosa",
+        "pris" : 3499,
+        "bilde" : "holzweilergenser2.jpg"
+      },
+      "genser006" : {
+        "navn" : "TANIS HIGH NECK GUL GENSER",
+        "merke" : "Sand",
+        "modell" : "genser",
+        "farge" : "gul",
+        "pris" : 1399,
+        "bilde" : "tanisgenser.jpg"
+      }},
+ "kjoler" : {
+     "kjole001" : {
+       "navn" : "SANDRA ROSA KJOLE",
+       "merke" : "Creative Collective",
+       "modell" : "sommerkjole",
+       "farge" : "rosa",
+       "pris" : 1399,
+       "bilde" : "sandrakjole.jpg"
+      },
+      "kjole002" : {
+        "navn" : "MIKI GUL MAXIKJOLE",
+        "merke" : "stylein",
+        "modell" : "maxikjole",
+        "farge" : "gul",
+        "pris" : 2499,
+        "bilde" : "tanisgenser.jpg"
+       },
+       "kjole003" : {
+         "navn" : "BLAKELY SILK LEOPARDMØNSTRET MAXIKJOLE",
+         "merke" : "Ganni",
+         "modell" : "maxikjole",
+         "farge" : "brun",
+         "pris" : 4199,
+         "bilde" : "gannikjole.jpg"
+        },
+        "kjole004" : {
+          "navn" : "GOLDSTONE CREPE MØNSTRET KJOLE",
+          "merke" : "Ganni",
+          "modell" : "sommerkjole",
+          "farge" : "rød",
+          "pris" : 1699,
+          "bilde" : "gannikjole2.jpg"
+         },
+        "kjole005" : {
+           "navn" : "COTE DE'AZUR GRØNN MAXIKJOLE",
+           "merke" : "Envelope",
+           "modell" : "maxikjole",
+           "farge" : "grønn",
+           "pris" : 3499,
+           "bilde" : "envelopekjole.jpg"
+          },
+        "kjole006" : {
+            "navn" : "JENNY MØRKEBLÅ JUMPSUIT",
+            "merke" : "Ganni",
+            "modell" : "jumpsuit",
+            "farge" : "blå",
+            "pris" : 1899,
+            "bilde" : "jennykjole.jpg"
+        }},
+  "bukser" : {
+        "bukse001" : {
+          "navn" : "MELVILLE BRUNE BUKSER",
+          "merke" : "Designer Remix",
+          "modell" : "bukse",
+          "farge" : "brun",
+          "pris" : 1599,
+          "bilde" : "designerbukser.jpg"
+        },
+        "bukse002" : {
+          "navn" : "ARELLA FLARED SORT BUKSE",
+          "merke" : "Sand",
+          "modell" : "bukse",
+          "farge" : "sort",
+          "pris" : 1799,
+          "bilde" : "sandbukser.jpg"
+        },
+        "bukse003" : {
+          "navn" : "JANNE HVIT BUKSE",
+          "merke" : "Baum und pferdgraten",
+          "modell" : "bukse",
+          "farge" : "hvit",
+          "pris" : 1699,
+          "bilde" : "jannebukser.jpg"
+        },
+        "bukse004" : {
+          "navn" : "DAILY CROP BLÅ JEANS",
+          "merke" : "M.I.H jeans",
+          "modell" : "jeans",
+          "farge" : "blå",
+          "pris" : 2399,
+          "bilde" : "mihbukser.jpg"
+        },
+        "bukse005" : {
+          "navn" : "LE HIGH FLARE RANGEVIEW GRÅ JEANS",
+          "merke" : "Frame denim",
+          "modell" : "jeans",
+          "farge" : "sort",
+          "pris" : 2599,
+          "bilde" : "framebukser.jpg"
+        },
+        "bukse006" : {
+          "navn" : "MARRAKESH BEE WASH BLÅ JEANS",
+          "merke" : "M.I.H jeans",
+          "modell" : "jeans",
+          "farge" : "blå",
+          "pris" : 2599,
+          "bilde" : "mihbukser2.jpg"
+        }},
+  "jakker" : {
+        "jakke001" : {
+            "navn" : "JEANS BLÅ DENIMJAKKE",
+            "merke" : "Creative Collective",
+            "modell" : "jakke",
+            "farge" : "blå",
+            "pris" : 1199,
+            "bilde" : "creativejakke.jpg"
+        },
+        "jakke002" : {
+            "navn" : "HILDUR MØRKEBLÅ BIKERJAKKE",
+            "merke" : "Creative Collective",
+            "modell" : "jakke",
+            "farge" : "blå",
+            "pris" : 1399,
+            "bilde" : "creativejakke2.jpg"
+        },
+        "jakke003" : {
+            "navn" : "RANDY 533 FAUX GUL JAKKE",
+            "merke" : "Stine Goya",
+            "modell" : "jakke",
+            "farge" : "gul",
+            "pris" : 3399,
+            "bilde" : "randyjakke.jpg"
+        },
+        "jakke004" : {
+            "navn" : "FENN LYSEBLÅ KÅPE",
+            "merke" : "Ganni",
+            "modell" : "kåpe",
+            "farge" : "blå",
+            "pris" : 2799,
+            "bilde" : "gannijakke.jpg"
+        },
+        "jakke005" : {
+            "navn" : "RUSTRØD KORT ULLFRAKK",
+            "merke" : "See By Chloé",
+            "modell" : "kåpe",
+            "farge" : "rød",
+            "pris" : 5199,
+            "bilde" : "rustjakke.jpg"
+        },
+        "jakke006" : {
+            "navn" : "PREVAILING ORANSJE KÅPE",
+            "merke" : "Holzweiler",
+            "modell" : "kåpe",
+            "farge" : "rød",
+            "pris" : 3499,
+            "bilde" : "holzweilerjakke.jpg"
+        }},
+  "sko" : {
+        "sko001" : {
+            "navn" : "RS-X TROPHY LYSEGRÅ SNEAKERS",
+            "merke" : "Puma",
+            "modell" : "sneakers",
+            "farge" : "grå",
+            "pris" : 1099,
+            "bilde" : "pumasko.jpg"
+        },
+        "sko002" : {
+            "navn" : "YUNG-1 SORTE SNEAKERS",
+            "merke" : "adidas",
+            "modell" : "sneakers",
+            "farge" : "sort",
+            "pris" : 1299,
+            "bilde" : "adidassko.jpg"
+        },
+        "sko003" : {
+            "navn" : "SUEW ORANGE SNEAKERS",
+            "merke" : "Superga",
+            "modell" : "snakers",
+            "farge" : "oransje",
+            "pris" : 1099,
+            "bilde" : "supergasko.jpg"
+        },
+        "sko004" : {
+            "navn" : "SIENA HIGH SORTE SLINGBACKS",
+            "merke" : "Malene Birger",
+            "modell" : "heler",
+            "farge" : "sort",
+            "pris" : 3799,
+            "bilde" : "malenesko.jpg"
+        },
+        "sko005" : {
+            "navn" : "BETHY GULE PUMPS I SEMSKET SKINN",
+            "merke" : "Notabene",
+            "modell" : "heler",
+            "farge" : "gul",
+            "pris" : 2399,
+            "bilde" : "bethysko.jpg"
+        },
+        "sko006" : {
+            "navn" : "PAXILOW RØDE PUMPS",
+            "merke" : "Malene Birger",
+            "modell" : "heler",
+            "farge" : "rød",
+            "pris" : 2999,
+            "bilde" : "malenesko2.jpg"
+        }},

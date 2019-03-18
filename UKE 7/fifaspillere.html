@@ -2,6 +2,7 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="fifa.css">
     <title>Fifaspillere</title>
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
     <script>
@@ -19,8 +20,11 @@
   <body>
     <header>
       <nav>
+        <button onclick="alle()">Alle spillere</button>
         <button onclick="alder()">De syv yngste spillerne</button>
-        <button onclick="height()">De syv laveste spillerne</button>
+        <button onclick="height()">De fem laveste spillerne</button>
+        <button onclick="possisjon()">Possisjonen Left Front</button>
+        <button onclick="navn()">Navn som starter på A</button>
       </nav>
     </header>
     <main>
@@ -29,8 +33,8 @@
       const main = document.querySelector("main");
 
       const db = firebase.database();
-      const Age = db.ref("players");
-      const Height = db.ref("players");
+      const Spiller = db.ref("players");
+
 
       function visVare(snapshot){
           let spiller = snapshot.val();
@@ -46,19 +50,46 @@
           `
       }
 
+      function alle(){
+        main.innerHTML=""
+        Spiller
+          .on("child_added",visVare);
+      }
+
       function alder(){
-        Age
+        main.innerHTML=""
+        Spiller
             .orderByChild("Age")
             .limitToFirst(7)
             .on("child_added",visVare);
       }
 
       function height(){
-        Height
+        main.innerHTML=""
+        Spiller
             .orderByChild("Height")
             .limitToFirst(5)
             .on("child_added",visVare);
       }
+
+      function possisjon(){
+        main.innerHTML=""
+        Spiller
+          .orderByChild("Position")
+          .equalTo("LF")
+          .on("child_added",visVare);
+      }
+
+      function navn(){
+        main.innerHTML=""
+        Spiller
+          .orderByChild("Name")
+          .startAt("A")
+          .endAt("B")
+          .on("child_added",visVare);
+      }
+
+
     </script>
   </body>
 </html>
