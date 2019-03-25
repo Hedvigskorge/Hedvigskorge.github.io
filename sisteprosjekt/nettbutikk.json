@@ -244,7 +244,56 @@
             "farge" : "rød",
             "pris" : 2999,
             "bilde" : "malenesko2.jpg"
-        }
-      }
+        }},
+  "tilbehør" : {
+            "tilbehør001" : {
+                "navn" : "ENCHANTRESS SORT SOLBRILLE",
+                "merke" : "Le Specs",
+                "modell" : "solbriller",
+                "farge" : "sort",
+                "pris" : 649,
+                "bilde" : "sortsolbrille.jpg"
+            },
+            "tilbehør002" : {
+                "navn" : "CALIENTE SIRUP SOLBRILLES",
+                "merke" : "Le Specs",
+                "modell" : "solbriller",
+                "farge" : "brun",
+                "pris" : 649,
+                "bilde" : "sirupsolbrille.jpg"
+            },
+            "tilbehør003" : {
+                "navn" : "CRAFTED RIVIERA SOLBRILLER",
+                "merke" : "Komono",
+                "modell" : "snakers",
+                "farge" : "blå",
+                "pris" : 1199,
+                "bilde" : "blåsolbrille.jpg"
+            },
+            "tilbehør004" : {
+                "navn" : "MARGAY BEANIE ORANSJE LUE",
+                "merke" : "Holzweiler",
+                "modell" : "lue",
+                "farge" : "oransje",
+                "pris" : 599,
+                "bilde" : "oransjelue.jpg"
+            },
+            "tilbehør005" : {
+                "navn" : "HEATHER HAT GRØNN LUE",
+                "merke" : "Maud",
+                "modell" : "lue",
+                "farge" : "grønn",
+                "pris" : 499,
+                "bilde" : "grønnlue.jpg"
+            },
+            "tilbehør006" : {
+                "navn" : "NOR HAT 7355 ORANSJE LUE",
+                "merke" : "Samsøe Samsøe",
+                "modell" : "lue",
+                "farge" : "oransje",
+                "pris" : 399,
+                "bilde" : "orangelue.jpg"
+            }
+          }
     }
-}
+  }

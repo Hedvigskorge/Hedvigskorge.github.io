@@ -20,14 +20,48 @@
   <body>
 
     <main>
+      const main = document.querySelector("main");
+
+
+
+      const db = firebase.database();
+      const Spiller = db.ref("players");
 
 
 
     </main>
 
     <script type="text/javascript">
-      const main = document..querySelector("main");
+      const main = document.querySelector("main");
+
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+
+      const db = firebase.database();
+      const players = db.ref("players/" + id);
+
+
+      function visSpiller(snapshot){
+                let spiller = snapshot.val();
+
+                main.innerHTML +=`
+                    <article class="spiller">
+                        <h1>${spiller.Name} - ${spiller.Club}</h1>
+                        <img src="${spiller.Photo}">
+                        <p>Alder: ${spiller.Age}</p>
+                        <p>Pris: ${spiller.Value}</p>
+                        <p>Possisjon: ${spiller.Position}</p>
+                        <p>Høyde: ${spiller.Height}</p>
+                    </article>
+                `
+            }
+
+        players.on("value", visSpiller)
+
+
     </script>
+
 
 
   </body>
