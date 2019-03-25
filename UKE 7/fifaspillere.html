@@ -38,6 +38,8 @@
 
       function visVare(snapshot){
           let spiller = snapshot.val();
+          let key = snapshot.key;
+
           main.innerHTML +=`
               <article class="vare">
                   <h1>${spiller.Name} - ${spiller.Club}</h1>
@@ -46,6 +48,7 @@
                   <p>Pris: ${spiller.Value}</p>
                   <p>Possisjon: ${spiller.Position}</p>
                   <p>Høyde: ${spiller.Height}</p>
+                  <a href="fifastats.html?id=${key}"> Detaljer </a>
               </article>
           `
       }
