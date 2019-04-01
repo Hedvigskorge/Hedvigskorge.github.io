@@ -4,13 +4,17 @@ nav{
   margin: auto;
   margin-top: 4px;
   }
-  
+
 .snareveier{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   position: relative;
+  }
+
+  .dropdown{
+    position: relative;
   }
 
 .snareveier div{
@@ -35,14 +39,20 @@ a{color:black;
   position: absolute;
   z-index: 1;
   background-color: white;
+  left:50%;
+  transform: translateX(-50%);
   }
 
 .snareveier:hover .dropdown-innhold{
   display:block;
   }
 
-main{
+header{
   text-align: center;
+  }
+
+header img{
+  max-width: 90%;
   }
 
 .info{
@@ -56,6 +66,35 @@ main{
   font-size: 22px;
   color: dimgrey;
   }
+
+
+article{
+  margin-bottom: 40px;
+  }
+
+main img{
+  height: 200px;
+  }
+
+main p{
+  font-size: 20px;
+  color: darkslategrey;
+  }
+
+.sidepanel{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+  }
+
+#klesgrid{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  }
+
 
 footer{
   background-color: WhiteSmoke;
@@ -81,3 +120,15 @@ footer img{
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   }
+
+
+  @media (max-width: 1100px) {
+    #klesgrid{
+      grid-template-columns: 1fr 1fr;
+      }
+    }
+  @media (max-width: 600px) {
+    #klesgrid{
+      grid-template-columns: 1fr;
+      }
+    }

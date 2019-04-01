@@ -64,7 +64,7 @@
         "modell" : "maxikjole",
         "farge" : "gul",
         "pris" : 2499,
-        "bilde" : "tanisgenser.jpg"
+        "bilde" : "styleinkjole.jpg"
        },
        "kjole003" : {
          "navn" : "BLAKELY SILK LEOPARDMØNSTRET MAXIKJOLE",
@@ -105,7 +105,7 @@
           "modell" : "bukse",
           "farge" : "brun",
           "pris" : 1599,
-          "bilde" : "designerbukser.jpg"
+          "bilde" : "dbukser.jpg"
         },
         "bukse002" : {
           "navn" : "ARELLA FLARED SORT BUKSE",

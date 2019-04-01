@@ -25,30 +25,36 @@
         <div class="snareveier">
           <p><a href="nettbutikk.html">Hjem</a></p>
           <p><a href=".html">Nyheter</a></p>
-          <p><button onclick="visKlær()">Klær</button></p>
+          <section class="dropdown"><button onclick="visKlær()">Klær</button>
             <div class="dropdown-innhold">
               <div><button onclick="visBukser()">Bukser</button></div>
               <div><button onclick="visGenser()">Genser</button></div>
               <div><button onclick="visJakker()">Jakker</button></div>
               <div><button onclick="visKjoler()">Kjoler</button></div>
             </div>
+          </section>
           <p><button onclick="visSko()">Sko</button></p>
           <p><button onclick="visTilbehør()">Tilbehør</button></p>
           <p><img src="bilder/handlekurv.jpg"></p>
         </div>
       </div>
     </nav>
-
-    <script src="javascript.js"></script>
-
-    <main>
+    <header>
       <img src="bilder/nyheter.jpg">
       <div class="info">
         <p>Gratis frakt</p>
         <p>Rask levering</p>
         <p>14 dagers angrerett</p>
       </div>
+    </header>
+    <main>
+      <div class="sidepanel">
+        <div id="sorteringer"></div>
+        <div id="klesgrid"></div>
+      </div>
     </main>
+    <script src="javascript.js"></script>
+
     <footer>
       <div class="kontaktinfo">
         <div>
