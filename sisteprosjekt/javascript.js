@@ -101,9 +101,9 @@
 
         function visFargenBlå(){
           header.innerHTML = " ";
-          main.innerHTML=""
+          main.innerHTML="";
           bukser
-            .orderByChild("farge")
-            .equalTo("blå")
+            .orderByChild("farge");
+            .equalTo("blå");
             .on("child_added",visVare);
         }
