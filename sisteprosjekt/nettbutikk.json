@@ -13,7 +13,7 @@
         "navn" : "KAYLEE FERSKENFARGET STRIKKEGENSER",
         "merke" : "Maud",
         "modell" : "Strikkegenser",
-        "farge" : "fersken",
+        "farge" : "oransje",
         "pris" : 2199,
         "bilde" : "maudgenser.jpg"
       },
@@ -201,7 +201,7 @@
             "navn" : "RS-X TROPHY LYSEGRÅ SNEAKERS",
             "merke" : "Puma",
             "modell" : "sneakers",
-            "farge" : "grå",
+            "farge" : "hvit",
             "pris" : 1099,
             "bilde" : "pumasko.jpg"
         },
@@ -216,7 +216,7 @@
         "sko003" : {
             "navn" : "SUEW ORANGE SNEAKERS",
             "merke" : "Superga",
-            "modell" : "snakers",
+            "modell" : "sneakers",
             "farge" : "oransje",
             "pris" : 1099,
             "bilde" : "supergasko.jpg"
@@ -265,7 +265,7 @@
             "tilbehør003" : {
                 "navn" : "CRAFTED RIVIERA SOLBRILLER",
                 "merke" : "Komono",
-                "modell" : "snakers",
+                "modell" : "solbriller",
                 "farge" : "blå",
                 "pris" : 1199,
                 "bilde" : "blåsolbrille.jpg"

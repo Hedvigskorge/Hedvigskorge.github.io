@@ -13,8 +13,8 @@ nav{
   position: relative;
   }
 
-  .dropdown{
-    position: relative;
+.dropdown{
+  position: relative;
   }
 
 .snareveier div{
@@ -52,7 +52,13 @@ header{
   }
 
 header img{
-  max-width: 90%;
+  max-width: 100%;
+  }
+
+.nyheterbilde{
+  background-color: White;
+  color: white;
+  border: none;
   }
 
 .info{
@@ -67,13 +73,13 @@ header img{
   color: dimgrey;
   }
 
-
 article{
   margin-bottom: 40px;
   }
 
 main img{
   height: 200px;
+  
   }
 
 main p{
@@ -83,9 +89,162 @@ main p{
 
 .sidepanel{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 7fr;
   grid-auto-rows: minmax(100px, auto);
+  margin-left: 30px;
   }
+
+.sortere p{
+  font-size: 26px;
+  }
+
+.kategori{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: WhiteSmoke;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+.kategori span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+.kategori span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+.kategori:hover span {
+  padding-right: 25px;
+  }
+.kategori:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+
+
+
+
+
+
+
+.sortere button{
+  padding: 6px 22px;
+  text-align: center;
+  width: 100px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttonBlå {
+  background-color: white;
+  color: black;
+  border: 3px solid #008CBA;
+  }
+.buttonBlå:hover {
+  background-color: #008CBA;
+  color: white;
+  }
+
+.buttonGul {
+  background-color: white;
+  color: black;
+  border: 3px solid gold;
+}
+
+.buttonGul:hover {
+  background-color: gold;
+  color: white;
+}
+
+.buttonSort {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  }
+.buttonSort:hover {
+  background-color: black;
+  color: white;
+  }
+
+.buttonOransje {
+  background-color: white;
+  color: black;
+  border: 3px solid orange;
+}
+
+.buttonOransje:hover {
+  background-color: orange;
+  color: white;
+}
+
+.buttonRosa {
+  background-color: white;
+  color: black;
+  border: 3px solid deeppink;
+  }
+.buttonRosa:hover {
+  background-color: deeppink;
+  color: white;
+  }
+
+.buttonHvit {
+  background-color: white;
+  color: black;
+  border: 3px solid #e7e7e7;
+  }
+.buttonHvit:hover {
+  background-color: #e7e7e7;
+  }
+
+.buttonBrun {
+  background-color: white;
+  color: black;
+  border: 3px solid saddlebrown;
+  }
+.buttonBrun:hover {
+  background-color: saddlebrown;
+  color: white;
+  }
+
+.buttonGrønn {
+  background-color: white;
+  color: black;
+  border: 3px solid #4CAF50;
+  }
+.buttonGrønn:hover {
+  background-color: #4CAF50;
+  color: white;
+  }
+
+.buttonRød {
+  background-color: white;
+  color: black;
+  border: 3px solid #f44336;
+  }
+.buttonRød:hover {
+  background-color: #f44336;
+  color: white;
+  }
+
 
 #klesgrid{
   text-align: center;
@@ -94,7 +253,6 @@ main p{
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   }
-
 
 footer{
   background-color: WhiteSmoke;
@@ -122,13 +280,13 @@ footer img{
   }
 
 
-  @media (max-width: 1100px) {
-    #klesgrid{
-      grid-template-columns: 1fr 1fr;
-      }
+@media (max-width: 1100px) {
+  #klesgrid{
+    grid-template-columns: 1fr 1fr;
     }
-  @media (max-width: 600px) {
-    #klesgrid{
-      grid-template-columns: 1fr;
-      }
+  }
+@media (max-width: 600px) {
+  #klesgrid{
+    grid-template-columns: 1fr;
     }
+  }
