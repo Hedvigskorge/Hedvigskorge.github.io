@@ -77,7 +77,7 @@
             sko.on("child_added", visVare);
           }
 
-        function visTilbehør() {
+        function visTilbehør(){
             header.innerHTML = " ";
             klesgrid.innerHTML = "";
             main.innerHTML=`
