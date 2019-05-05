@@ -15,7 +15,23 @@ nav{
 
 .dropdown{
   position: relative;
+  margin-top: 24px;
   }
+
+.dropdown button{
+  font-size: 22px;
+  border: 1px solid white;
+  background-color: white;
+  font-family: serif;
+}
+
+.nyheter{
+  font-size: 22px;
+  border: 1px solid white;
+  background-color: white;
+  font-family: serif;
+  margin-bottom: 25px;
+}
 
 .snareveier div{
   padding: 5px;
@@ -132,10 +148,6 @@ main p{
   opacity: 1;
   right: 0;
   }
-
-
-
-
 
 
 
@@ -289,3 +301,29 @@ footer img{
     grid-template-columns: 1fr;
     }
   }
+
+
+
+#produktinfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.produktBilde{
+  text-align: center;
+}
+
+
+
+#submithandlekurv{
+  background-color: black;
+  color:white;
+  border: 7px solid black;
+  font-size: 19px;
+}
+
+#Str{
+  font-size: 20px;
+  margin-top: 7px;
+  margin-right: 16px;
+}

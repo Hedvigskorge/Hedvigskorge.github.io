@@ -12,16 +12,20 @@
     let klesgrid = document.querySelector("#klesgrid");
     let main = document.querySelector("main");
          function visVare(snapshot) {
+             let parent = snapshot.ref.parent.key;
              let vare = snapshot.val();
+             let key = snapshot.key;
              klesgrid.innerHTML += `
                  <article>
                      <img src="bilder/${vare.bilde}">
                      <h1>${vare.navn}</h1>
                      <h3>${vare.merke}</h3>
                      <p>${vare.pris}</p>
+                     <a class="produkt" href="produktdetaljer.html?id=${key}&parent=${parent}">Detaljer</a>
                  </article>
              `;
         }
+
         function visKlær() {
           main.innerHTML=`
           <div class="sidepanel">
@@ -77,6 +81,7 @@
             sko.on("child_added", visVare);
           }
 
+
         function visTilbehør(){
             header.innerHTML = " ";
             klesgrid.innerHTML = "";
@@ -99,6 +104,7 @@
             klesgrid = document.querySelector("#klesgrid");
             tilbehør.on("child_added", visVare);
           }
+
 
 
 //funksjoner til sorteringer i klær
