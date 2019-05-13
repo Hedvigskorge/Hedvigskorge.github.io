@@ -41,3 +41,9 @@ function genererHTML(snapshot){
   }
 
 valgtProdukt.on("value",genererHTML);
+
+
+
+function goBack() {
+  window.history.back();
+}

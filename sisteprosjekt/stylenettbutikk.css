@@ -1,7 +1,6 @@
 nav{
   text-align: center;
   max-width: 1500px;
-  margin: auto;
   margin-top: 4px;
   }
 
@@ -11,6 +10,8 @@ nav{
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   position: relative;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
   }
 
 .dropdown{
@@ -18,12 +19,19 @@ nav{
   margin-top: 24px;
   }
 
+.dropdown-innhold{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
+
 .dropdown button{
   font-size: 22px;
   border: 1px solid white;
   background-color: white;
   font-family: serif;
-}
+  }
 
 .nyheter{
   font-size: 22px;
@@ -40,6 +48,7 @@ nav{
 .snareveier img{
   width: 50px;
   height: 40px;
+  margin-top: 10px;
   }
 
 #navigasjon p{
@@ -59,9 +68,14 @@ a{color:black;
   transform: translateX(-50%);
   }
 
-.snareveier:hover .dropdown-innhold{
+.dropdown:hover .dropdown-innhold{
   display:block;
   }
+
+.dropdown-innhold button:hover{
+  background-color: lightgrey;
+  }
+
 
 header{
   text-align: center;
@@ -109,6 +123,11 @@ main p{
   margin-left: 30px;
   }
 
+.sortere{
+  padding-left: 15px;
+  background-color: WhiteSmoke;
+  }
+
 .sortere p{
   font-size: 26px;
   }
@@ -127,12 +146,14 @@ main p{
   cursor: pointer;
   margin: 5px;
   }
+
 .kategori span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   }
+
 .kategori span:after {
   content: '\00bb';
   position: absolute;
@@ -150,8 +171,6 @@ main p{
   }
 
 
-
-
 .sortere button{
   padding: 6px 22px;
   text-align: center;
@@ -159,7 +178,7 @@ main p{
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 4px;
@@ -265,6 +284,12 @@ main p{
   grid-auto-rows: minmax(100px, auto);
   }
 
+
+#klesgrid article:hover{
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 5px 5px lightgrey;
+}
+
 footer{
   background-color: WhiteSmoke;
   text-align: center;
@@ -303,16 +328,20 @@ footer img{
   }
 
 
-
 #produktinfo{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .produktBilde{
-  text-align: center;
+  text-align: right;
+  margin-right: 130px;
+  margin-top: 10px;
 }
 
+.produktBilde img{
+  height: 300px;
+}
 
 
 #submithandlekurv{
@@ -326,4 +355,29 @@ footer img{
   font-size: 20px;
   margin-top: 7px;
   margin-right: 16px;
+}
+
+
+.inspo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.inspo p{
+  font-size: 30px;
+  text-align: center;
+}
+
+header{
+  text-align: center;
+}
+
+
+.tilbake{
+  font-size: 20px;
+  background-color: orange;
+  margin-left: 200px;
 }
