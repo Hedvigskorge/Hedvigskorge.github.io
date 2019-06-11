@@ -6,7 +6,6 @@
     <!-- kobler til firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
-      // Initialize Firebase
       var config = {
         apiKey: "AIzaSyDlX6uWnnLW9MwHquyOgHJ9HL0Qwg2EDsM",
         authDomain: "it01-uke5.firebaseapp.com",
@@ -20,18 +19,20 @@
     <style>
       body{
         background-image: url("bilder/tur.jpg");
-        font-size: 30px;
       }
     </style>
   </head>
-  <body>
+  <body class="registrerNy">
     <main>
       <section class="registrer">
         <form id="skjema">
-          <input id="Tur" type="text" required placeholder="Tur">
-          <input id="Høydeforskjell" type="text" required placeholder="Høydeforskjell">
+          <input id="Navn" type="text" required placeholder="Navn">
+          <input id="Område" type="text" required placeholder="Område">
           <input id="Lengde" type="text" required placeholder="Lengde">
-          <input id="Terreng" type="text" required placeholder="Terreng">
+          <input id="Varighet" type="text" required placeholder="Varighet">
+          <input id="Natur" type="text" required placeholder="Natur">
+          <input id="Barnevogn" type="text" required placeholder="Barnevogn">
+          <input id="Kart" type="text" required placeholder="Kart">
           <button type="submit">Registrer ny tur</button>
         </form>
       </section>
@@ -40,23 +41,30 @@
 
       // definerer variabel/navn for html elementene jeg trenger
       const skjema = document.querySelector("#skjema");
-      const inptHøydeforskjell = document.querySelector("#Høydeforskjell");
+      const inptNavn = document.querySelector("#Navn");
+      const inptOmråde = document.querySelector("#Område");
       const inptLengde = document.querySelector("#Lengde");
-      const inptTerreng = document.querySelector("#Terreng");
-      const inptTur = document.querySelector("#Tur");
+      const inptVarighet = document.querySelector("#Varighet");
+      const inptNatur= document.querySelector("#Natur");
+      const inptBarnevogn = document.querySelector("#Barnevogn");
+
       const db = firebase.database();
       const turer = db.ref("Tur");
 
       function registrerNy(){
         //lagrer informasjon som skal være primærnøkkel
-        const nokkel = inptTur.value;
+        const nokkel = inptNavn.value;
         //lagrer all annen data til databasen, på JSON format
         const data = {
+          Navn: inptNavn.value,
+          Område: inptOmråde.value,
           Lengde: inptLengde.value,
-          Terreng: inptTerreng.value,
-          Høydeforskjell: inptHøydeforskjell.value
+          Varighet: inptVarighet.value,
+          Natur: inptNatur.value,
+          Barnevognvennlig: inptBarnevogn.value,
+          Kart: inptKart.value
         };
-        //Bokler til riktig sted i datapase, angir primærnøkkel
+        //Kobler til riktig sted i datapase, angir primærnøkkel
         const tur = turer.child(nokkel);
         //legger inn ny data i databasen
         tur.set(data);
@@ -64,7 +72,6 @@
       }
       // når vi sender submit (knappen), kjøres funksjonen registrerNy
       skjema.addEventListener("submit", registrerNy);
-
 
     </script>
   </body>

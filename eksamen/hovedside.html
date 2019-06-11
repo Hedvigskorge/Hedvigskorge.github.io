@@ -21,14 +21,26 @@
   </head>
   <body>
     <nav>
-      <a href="registrerNy.html">legg til nye turer</a>
+      <h2>Velforening Sandvika</h2>
+      <ul>
+        <li><a href="hovedside.html">Hjem</a></li>
+        <li><a href="registrerNy.html">Legg til nye turer</a></li>
+        <li class="dropdown">
+          <button class="drop" onclick="visTurer">Turer</button>
+          <div class="dropdown-innhold">
+            <button onclick="visSandvika()">Sandvika</button>
+            <button onclick="visKolsås()">Kolsås</button>
+            <button onclick="visLommedalen()">Lommedalen</button>
+            <button onclick="visFornebu()">Fornebu</button>
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <header>
-      <h1>Turgåing</h1>
-      <img class="draPåTur" src="bilder/draPåTur.jpg">
-
+      <h1>Opplev flotte turopplevelser i nærområdene ved Sandvika</h1>
     </header>
+
     <main>
       <button class="finnTur" onclick="visTurer()">Finn en tur som passer for deg</button>
     </main>

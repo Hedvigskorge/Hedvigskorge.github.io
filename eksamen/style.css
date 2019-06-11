@@ -1,8 +1,88 @@
 
 /*CSS til hovedside */
-.draPåTur{
-  width: 70%;
-  margin-left: 15%
+nav{
+  margin-top: 2%;
+  margin-bottom:5%;
+}
+
+nav h2{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 2%
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: WhiteSmoke;
+  }
+
+li {
+  float: left;
+  }
+
+li button, li a, .drop {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: inherit;
+  border: none;
+  background-color: WhiteSmoke;
+  }
+
+li button:hover,li a:hover, .dropdown:hover .drop {
+  background-color: lightgrey;
+  }
+
+.dropdown-innhold {
+  display: none;
+  position: absolute;
+  background-color: WhiteSmoke;
+  }
+
+.dropdown-innhold button {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+.dropdown-innhold button:hover {
+  background-color: lightgrey;
+  }
+
+.dropdown:hover .dropdown-innhold {
+  display: block;
+  }
+
+
+header{
+  background-image: url("bilder/bildeforside.jpg");
+  background-size: contain;
+}
+
+header h1{
+  color: white;
+  font-family: inherit;
+  font-size: 55px;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 19%;
+  text-shadow: 0 0 2px black;
+}
+
+.forsidebilde{
+  width: 100%;
+  }
+
+.finnTur{
+  margin-top: 25px;
+  font-size: 20px;
   }
 
 .sidepanel{
@@ -14,6 +94,8 @@
 
 .sortering{
   background-color: WhiteSmoke;
+  padding-left: 4%;
+  padding-bottom: 3%;
   }
 
 .sortering h1{
@@ -30,18 +112,23 @@
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   background-color: white;
   }
 
 .sortering button:hover{
-  border: 2px solid darkgreen;
+  border: 3px solid darkgreen;
   }
 
 .fjernSortering{
   font-size: 16px;
   border: 2px solid darkgreen;
   }
+
+.fjernSortering:hover{
+  background-color: darkolivegreen;
+  color: white;
+}
 
 #hovedgrid{
   text-align: center;
@@ -59,7 +146,6 @@
   border: 1px solid lightgrey;
   box-shadow: 2px 2px 5px 5px lightgrey;
   }
-
 
 
 /*CSS til turDetaljer */
@@ -80,3 +166,10 @@
   border-bottom: 1px solid grey;
   margin-right: 10%;
   }
+
+.detaljer{
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+/*CSS til registrerNy*/
