@@ -13,7 +13,6 @@ function genererHTML(snapshot){
       <p>Lengde: ${tur.Lengde}km </p>
       <p>Høydeforskjell: ${tur.Høydeforskjell}m</p>
       <a href="turDetaljer.html?id=${nokkel}">Detaljer</a>
-      ${tur.Kart}
     </div>
   `
 }
