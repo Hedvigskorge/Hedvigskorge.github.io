@@ -2,7 +2,7 @@
 <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Friluft sandvika</title>
+    <title></title>
     <!-- kobler til firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
@@ -19,14 +19,16 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1>Tekst</h1>
-      <nav>
-        <a href="registrerNy.html">legg til nye turer</a>
-      </nav>
-    </header>
     <main>
+
     </main>
-    <script src="javascript.js"></script>
+    <script>
+      //lagrer primærnøkkelen fra URL i en variable vi kaller id
+      var url_string = window.location.href;
+      var url = new URL (url_string);
+      var id = url.searchParams.get("id");
+    </script>
+
+
   </body>
 </html>

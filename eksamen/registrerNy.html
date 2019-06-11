@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Friluft sandvika</title>
+    <!-- kobler til firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDlX6uWnnLW9MwHquyOgHJ9HL0Qwg2EDsM",
+        authDomain: "it01-uke5.firebaseapp.com",
+        databaseURL: "https://it01-uke5.firebaseio.com",
+        projectId: "it01-uke5",
+        storageBucket: "it01-uke5.appspot.com",
+        messagingSenderId: "855124442221"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <main>
+      <img src="bilder/tur.jpg">
+      <section class="registrer">
+        <form id="skjema">
+          <input id="Tur" type="text" required placeholder="Tur">
+          <input id="Høydeforskjell" type="text" required placeholder="Høydeforskjell">
+          <input id="Lengde" type="text" required placeholder="Lengde">
+          <input id="Terreng" type="text" required placeholder="Terreng">
+          <button type="submit">Registrer ny tur</button>
+        </form>
+      </section>
+    </main>
+    <script>
+
+      // definerer variabel/navn for html elementene jeg trenger
+      const skjema = document.querySelector("#skjema");
+      const inptHøydeforskjell = document.querySelector("#Høydeforskjell");
+      const inptLengde = document.querySelector("#Lengde");
+      const inptTerreng = document.querySelector("#Terreng");
+      const inptTur = document.querySelector("#Tur");
+      const db = firebase.database();
+      const turer = db.ref("Tur");
+
+      function registrerNy(){
+        //lagrer informasjon som skal være primærnøkkel
+        const nokkel = inptTur.value;
+        //lagrer all annen data til databasen, på JSON format
+        const data = {
+          Lengde: inptLengde.value,
+          Terreng: inptTerreng.value,
+          Høydeforskjell: inptHøydeforskjell.value
+        };
+        //Bokler til riktig sted i datapase, angir primærnøkkel
+        const tur = turer.child(nokkel);
+        //legger inn ny data i databasen
+        tur.set(data);
+        skjema.reset();
+      }
+      // når vi sender submit (knappen), kjøres funksjonen registrerNy
+      skjema.addEventListener("submit", registrerNy);
+
+
+    </script>
+  </body>
+</html>
