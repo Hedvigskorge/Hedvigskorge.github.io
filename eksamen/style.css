@@ -1,0 +1,82 @@
+
+/*CSS til hovedside */
+.draPåTur{
+  width: 70%;
+  margin-left: 15%
+  }
+
+.sidepanel{
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  margin-left: 2%;
+  margin-top: 4%;
+  }
+
+.sortering{
+  background-color: WhiteSmoke;
+  }
+
+.sortering h1{
+  font-size: 25px;
+  color: darkgreen;
+  }
+
+.sortering p{
+  font-size: 21px;
+  color: darkgreen;
+  }
+
+.sortering button{
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: white;
+  }
+
+.sortering button:hover{
+  border: 2px solid darkgreen;
+  }
+
+.fjernSortering{
+  font-size: 16px;
+  border: 2px solid darkgreen;
+  }
+
+#hovedgrid{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5%;
+  }
+
+.gridcontainer a{
+  text-decoration: none;
+  color: black;
+  }
+
+#hovedgrid article:hover{
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 5px 5px lightgrey;
+  }
+
+
+
+/*CSS til turDetaljer */
+#turInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.generellTekst :nth-child(odd){
+  background-color: lightgrey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  }
+
+.spesiellInfo :nth-child(odd){
+  background-color: lightgrey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-right: 10%;
+  }

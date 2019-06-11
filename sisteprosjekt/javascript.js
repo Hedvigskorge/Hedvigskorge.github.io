@@ -17,7 +17,6 @@
              let key = snapshot.key;
              klesgrid.innerHTML += `
                  <article>
-
                      <a class="produkt" href="produktdetaljer.html?id=${key}&parent=${parent}"> <img src="bilder/${vare.bilde}">
                       <h1>${vare.navn}</h1>
                       <h3>${vare.merke}</h3>
@@ -25,8 +24,6 @@
                  </article>
              `;
         }
-
-
 
         function visKlær() {
           main.innerHTML=`

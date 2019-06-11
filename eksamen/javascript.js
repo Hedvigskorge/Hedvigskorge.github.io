@@ -3,19 +3,130 @@
 const main = document.querySelector("main");
 const db = firebase.database();
 const turer = db.ref("Tur");
+let header = document.querySelector("header");
+let hovedgrid = document.querySelector("#hovedgrid");
 
-function genererHTML(snapshot){
+
+function genererHTML(snapshot) {
   let tur = snapshot.val();
   let nokkel = snapshot.key;
-  main.innerHTML +=`
-    <div class = "gridcontainer">
-      <h1>Terreng: ${tur.Terreng} </h1>
-      <p>Lengde: ${tur.Lengde}km </p>
-      <p>Høydeforskjell: ${tur.Høydeforskjell}m</p>
-      <a href="turDetaljer.html?id=${nokkel}">Detaljer</a>
-    </div>
-  `
-}
+  hovedgrid.innerHTML += `
+      <article class="gridcontainer">
+        <a class="entur" href="turDetaljer.html?id=${nokkel}">
+        <h1>${nokkel} </h1>
+        <p>Område: ${tur.Område} </p>
+        <p>Lengde: ${tur.Lengde} km</p>
+        <p>Natur: ${tur.Natur}</p>
+        </a>
+      </article>
+    `;
+  }
 
-//on er en spørring. her på db (alt sammen). Sender resultatet til funksjonen genererHTML
-turer.on("child_added",genererHTML);
+function visTurer() {
+  main.innerHTML=`
+  <div class="sidepanel">
+    <div class="sortering">
+      <h1>Sorteringer</h1>
+      <p>Turområde</p>
+        <button class="sorteringTurområde" onclick="visSandvika()">Sandvika</button>
+        <button class="sorteringturområde" onclick="visKolsås()">Kolsås</button>
+        <button class="sorteringturområde" onclick="visLommedalen()">Lommedalen</button>
+        <button class="sorteringturområde" onclick="visFornebu()">Fornebu</button>
+      <p>Natur</p>
+        <button class="sorteringNatur" onclick="visSkog()">Skog</button>
+        <button class="sorteringNatur" onclick="visKyst()">Kyst</button>
+        <button class="sorteringNatur" onclick="visBebygd()">Bebygd</button>
+      <p>Passer for barnevogn</p>
+        <button class="sorteringBarnevogn" onclick="visJaB()">Ja</button>
+        <button class="sorteringBarnevogn" onclick="visNeiB()">Nei</button>
+      <br><br><br>
+      <button class="fjernSortering" onclick="visTurer()">Fjern sortering</button>
+    </div>
+    <div id="hovedgrid">
+    </div>
+  </div>
+  `;
+  hovedgrid = document.querySelector("#hovedgrid");
+  header.innerHTML = "";
+  turer.on("child_added",genererHTML);
+  }
+
+
+//funksjoner til sorteringer
+
+  function visSkog() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Natur")
+    .equalTo("Skog")
+    .on("child_added",genererHTML);
+    }
+  function visKyst() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Natur")
+    .equalTo("Kyst")
+    .on("child_added",genererHTML);
+    }
+  function visBebygd() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Natur")
+    .equalTo("Bebygd")
+    .on("child_added",genererHTML);
+    }
+
+  function visJaB() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Barnevogn")
+    .equalTo("Ja")
+    .on("child_added",genererHTML);
+    }
+  function visNeiB() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Barnevogn")
+    .equalTo("Nei")
+    .on("child_added",genererHTML);
+    }
+
+  function visSandvika() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Område")
+    .equalTo("Sandvika")
+    .on("child_added",genererHTML);
+    }
+
+  function visKolsås() {
+    header.innerHTML = " ";
+    hovedgrid.innerHTML = "";
+    turer
+      .orderByChild("Område")
+      .equalTo("Kolsås")
+      .on("child_added",genererHTML);
+    }
+  function visFornebu() {
+    header.innerHTML = "";
+    hovedgrid.innerHTML = "";
+    turer
+    .orderByChild("Område")
+    .equalTo("Fornebu")
+    .on("child_added",genererHTML);
+    }
+
+  function visLommedalen() {
+    header.innerHTML = " ";
+    hovedgrid.innerHTML = "";
+    turer
+      .orderByChild("Område")
+      .equalTo("Lommedalen")
+      .on("child_added",genererHTML);
+    }

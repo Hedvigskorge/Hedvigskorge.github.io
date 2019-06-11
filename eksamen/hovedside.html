@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Friluft sandvika</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- kobler til firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
@@ -19,14 +20,19 @@
     </script>
   </head>
   <body>
+    <nav>
+      <a href="registrerNy.html">legg til nye turer</a>
+    </nav>
+
     <header>
-      <h1>Tekst</h1>
-      <nav>
-        <a href="registrerNy.html">legg til nye turer</a>
-      </nav>
+      <h1>Turgåing</h1>
+      <img class="draPåTur" src="bilder/draPåTur.jpg">
+
     </header>
     <main>
+      <button class="finnTur" onclick="visTurer()">Finn en tur som passer for deg</button>
     </main>
     <script src="javascript.js"></script>
+
   </body>
 </html>

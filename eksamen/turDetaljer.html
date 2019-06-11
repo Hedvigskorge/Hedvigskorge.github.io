@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- kobler til firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
@@ -17,47 +18,17 @@
       };
       firebase.initializeApp(config);
     </script>
-    <style>
-      body{
-
-      }
-    </style>
   </head>
   <body>
+    <nav>
+
+      <button class="tilbake" onclick="goBack()">Tilbake</button>
+
+    </nav>
     <main>
 
     </main>
-
     <button onclick="slettTur()">Slett tur</button>
-
-    <script>
-      //lagrer primærnøkkelen fra URL i en variable vi kaller id
-      let url_string = window.location.href;
-      let url = new URL (url_string);
-      let id = url.searchParams.get("id");
-      main = document.querySelector("main");
-
-      //variabler som kobler til database
-      const db = firebase.database();
-      const tur = db.ref("Tur/" + id);
-
-      function genererHTML (snapshot) {
-        valgtTur = snapshot.val();
-        nokkel = snapshot.key;
-        main.innerHTML = `
-          <h1>${nokkel}</h1>
-          <p>Terreng: ${valgtTur.Terreng} </p>
-          <p>Lengde: <img src="bilder/lengde.jpg"> ${valgtTur.Lengde} km </p>
-          <p>Varighet: <img src="bilder/tid.jpg"> </p>
-          <p>Høydeforskjell: ${valgtTur.Høydeforskjell} m</p>
-          <a href="turDetaljer.html?id=${nokkel}">Detaljer</a>
-          ${valgtTur.Kart}
-          `
-      }
-      tur.on("value",genererHTML);
-      function slettTur(){
-        tur.remove();
-      }
-    </script>
+    <script src="scriptDetaljer.js"></script>
   </body>
 </html>
