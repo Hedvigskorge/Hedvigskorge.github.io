@@ -80,8 +80,9 @@ header h1 {
 
 .finnTur{
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 19%;
+  width: 100%;
+  padding: 15px;;
+  font-size: 26px;
   }
 
 .forsidebilde{
