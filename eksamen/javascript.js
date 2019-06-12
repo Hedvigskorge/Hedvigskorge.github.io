@@ -1,6 +1,5 @@
 
 // Kobling til html-elementene
-const main = document.querySelector("main");
 const sidepanel = document.querySelector(".sidepanel");
 const db = firebase.database();
 const turer = db.ref("Tur");
@@ -45,7 +44,6 @@ function visTurer() {
   hovedgrid.innerHTML = "";
   turer.on("child_added",genererHTML);
   }
-
 
 //funksjoner til sorteringer
 

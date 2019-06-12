@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Friluft sandvika</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- kobler til firebase-->
+    <!-- Oppretter en forbindelse med firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
       var config = {
@@ -22,6 +22,7 @@
     <main>
       <a href="hovedside.html">Tilbake til Hovedsiden</a>
       <section class="registrer">
+        <!-- Lager skjema hvor man kan fylle inn informasjon til et nytt objekt-->
         <form id="skjema">
           <input id="Navn" type="text" required placeholder="Navn på turen">
           <input id="Lengde" type="text" required placeholder="Lengde (antall km)">
@@ -30,7 +31,7 @@
           <input id="Område" type="text" required placeholder="Område">
           <input id="Natur" type="text" required placeholder="Natur">
           <input id="Kart" type="text" required placeholder="Kart (link til maps)">
-          <button type="submit">Registrer ny tur</button>
+          <button type="submit"><Registrer ny tur</button>
         </form>
       </section>
     </main>
@@ -50,7 +51,6 @@
       const turer = db.ref("Tur");
 
       function registrerNy(){
-        console.log("hei");
         //lagrer informasjon som skal være primærnøkkel
         const nokkel = inptNavn.value;
         //lagrer all annen data til databasen, på JSON format
@@ -62,12 +62,11 @@
           Barnevognvennlig: inptBarnevogn.value,
           Kart: inptKart.value
         };
-
         //Kobler til riktig sted i database, angir primærnøkkel
         const tur = turer.child(nokkel);
         //legger inn ny data i databasen
         tur.set(data);  //inserter data
-        //skjema.reset();  //resetter skjema
+        skjema.reset();  //resetter skjema
       }
 
       // når vi sender submit (knappen), kjøres funksjonen registrerNy
