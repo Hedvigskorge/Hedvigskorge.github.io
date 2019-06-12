@@ -1,5 +1,5 @@
 
-/*CSS til hovedside */
+/*CSS til nav */
 nav{
   margin-top: 2%;
   margin-bottom:5%;
@@ -61,12 +61,14 @@ li button:hover,li a:hover, .dropdown:hover .drop {
   }
 
 
+/*CSS til header */
 header{
   background-image: url("bilder/bildeforside.jpg");
   background-size: contain;
-}
+  background-repeat: no-repeat;
+  }
 
-header h1{
+header h1 {
   color: white;
   font-family: inherit;
   font-size: 55px;
@@ -74,41 +76,44 @@ header h1{
   padding-top: 10%;
   padding-bottom: 19%;
   text-shadow: 0 0 2px black;
-}
+  }
+
+.finnTur{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 19%;
+  }
 
 .forsidebilde{
   width: 100%;
   }
 
-.finnTur{
-  margin-top: 25px;
-  font-size: 20px;
+
+/*CSS til main*/
+.gridhovedside{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   }
 
 .sidepanel{
-  display: grid;
-  grid-template-columns: 2fr 7fr;
   margin-left: 2%;
   margin-top: 4%;
-  }
-
-.sortering{
   background-color: WhiteSmoke;
   padding-left: 4%;
   padding-bottom: 3%;
   }
 
-.sortering h1{
+.sidepanel h1{
   font-size: 25px;
   color: darkgreen;
   }
 
-.sortering p{
+.sidepanel p{
   font-size: 21px;
   color: darkgreen;
   }
 
-.sortering button{
+.sidepanel button{
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -116,7 +121,7 @@ header h1{
   background-color: white;
   }
 
-.sortering button:hover{
+.sidepanel button:hover{
   border: 3px solid darkgreen;
   }
 
@@ -155,15 +160,15 @@ header h1{
   }
 
 .generellTekst :nth-child(odd){
-  background-color: lightgrey;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  background-color: WhiteSmoke;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   }
 
 .spesiellInfo :nth-child(odd){
-  background-color: lightgrey;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  background-color: WhiteSmoke;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   margin-right: 10%;
   }
 
@@ -172,4 +177,42 @@ header h1{
   margin-right: 5%;
   }
 
+.informerendetekst{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.slett{
+  margin-left: 94%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 3px solid red;
+  background-color: whitesmoke;
+  }
+
 /*CSS til registrerNy*/
+.bodyNyRegistrer{
+  background: url("bilder/tur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*opacity: 0.5;*/
+  }
+
+.bodyNyRegistrer a{
+  font-size: 22px;
+  color: white;
+  margin-left: 1%;
+  }
+
+#skjema{
+  margin-top: 20%;
+  text-align: center;
+  }
+
+#skjema input{
+  font-size: 25px;
+  }
+
+#skjema button{
+  font-size: 25px;
+  }

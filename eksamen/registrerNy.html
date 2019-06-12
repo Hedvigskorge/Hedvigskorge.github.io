@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Friluft sandvika</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- kobler til firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script>
@@ -16,23 +17,19 @@
       };
       firebase.initializeApp(config);
     </script>
-    <style>
-      body{
-        background-image: url("bilder/tur.jpg");
-      }
-    </style>
   </head>
-  <body class="registrerNy">
+  <body class="bodyNyRegistrer">
     <main>
+      <a href="hovedside.html">Tilbake til Hovedsiden</a>
       <section class="registrer">
         <form id="skjema">
-          <input id="Navn" type="text" required placeholder="Navn">
+          <input id="Navn" type="text" required placeholder="Navn på turen">
           <input id="Område" type="text" required placeholder="Område">
-          <input id="Lengde" type="text" required placeholder="Lengde">
-          <input id="Varighet" type="text" required placeholder="Varighet">
+          <input id="Lengde" type="text" required placeholder="Lengde (antall km)">
+          <input id="Varighet" type="text" required placeholder="Varighet (antall timer)">
           <input id="Natur" type="text" required placeholder="Natur">
-          <input id="Barnevogn" type="text" required placeholder="Barnevogn">
-          <input id="Kart" type="text" required placeholder="Kart">
+          <input id="Barnevogn" type="text" required placeholder="Barnevogn (Ja/Nei)">
+          <input id="Kart" type="text" required placeholder="Kart (link til maps)">
           <button type="submit">Registrer ny tur</button>
         </form>
       </section>
@@ -56,7 +53,6 @@
         const nokkel = inptNavn.value;
         //lagrer all annen data til databasen, på JSON format
         const data = {
-          Navn: inptNavn.value,
           Område: inptOmråde.value,
           Lengde: inptLengde.value,
           Varighet: inptVarighet.value,
@@ -64,15 +60,14 @@
           Barnevognvennlig: inptBarnevogn.value,
           Kart: inptKart.value
         };
-        //Kobler til riktig sted i datapase, angir primærnøkkel
+        //Kobler til riktig sted i database, angir primærnøkkel
         const tur = turer.child(nokkel);
         //legger inn ny data i databasen
-        tur.set(data);
-        skjema.reset();
+        tur.set(data);  //inserter data
+        skjema.reset();  //resetter skjema
       }
       // når vi sender submit (knappen), kjøres funksjonen registrerNy
       skjema.addEventListener("submit", registrerNy);
-
     </script>
   </body>
 </html>

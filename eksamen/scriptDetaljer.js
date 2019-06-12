@@ -34,10 +34,12 @@ function genererHTML (snapshot) {
         ${valgtTur.Kart}
       </div>
     </div>
+    <p class="informerendetekst">${valgtTur.Tekst}</p>
     `
   }
 
 tur.on("value",genererHTML);
+
 function slettTur(){
   tur.remove();
 }

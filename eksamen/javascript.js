@@ -1,6 +1,7 @@
 
 // Kobling til html-elementene
 const main = document.querySelector("main");
+const sidepanel = document.querySelector(".sidepanel");
 const db = firebase.database();
 const turer = db.ref("Tur");
 let header = document.querySelector("header");
@@ -10,22 +11,7 @@ let hovedgrid = document.querySelector("#hovedgrid");
 function genererHTML(snapshot) {
   let tur = snapshot.val();
   let nokkel = snapshot.key;
-  hovedgrid.innerHTML += `
-      <article class="gridcontainer">
-        <a class="entur" href="turDetaljer.html?id=${nokkel}">
-        <h1>${nokkel} </h1>
-        <p>Område: ${tur.Område} </p>
-        <p>Lengde: ${tur.Lengde} km</p>
-        <p>Natur: ${tur.Natur}</p>
-        </a>
-      </article>
-    `;
-  }
-
-function visTurer() {
-  main.innerHTML=`
-  <div class="sidepanel">
-    <div class="sortering">
+  sidepanel.innerHTML=`
       <h1>Sorteringer</h1>
       <p>Turområde</p>
         <button class="sorteringTurområde" onclick="visSandvika()">Sandvika</button>
@@ -41,13 +27,22 @@ function visTurer() {
         <button class="sorteringBarnevogn" onclick="visNeiB()">Nei</button>
       <br><br><br>
       <button class="fjernSortering" onclick="visTurer()">Fjern sortering</button>
-    </div>
-    <div id="hovedgrid">
-    </div>
-  </div>
   `;
-  hovedgrid = document.querySelector("#hovedgrid");
+  hovedgrid.innerHTML += `
+      <article class="gridcontainer">
+        <a href="turDetaljer.html?id=${nokkel}">
+        <h1>${nokkel} </h1>
+        <p>Område: ${tur.Område} </p>
+        <p>Lengde: ${tur.Lengde} km</p>
+        <p>Natur: ${tur.Natur}</p>
+        </a>
+      </article>
+    `;
+  }
+
+function visTurer() {
   header.innerHTML = "";
+  hovedgrid.innerHTML = "";
   turer.on("child_added",genererHTML);
   }
 
@@ -99,6 +94,7 @@ function visTurer() {
   function visSandvika() {
     header.innerHTML = "";
     hovedgrid.innerHTML = "";
+    console.log(turer);
     turer
     .orderByChild("Område")
     .equalTo("Sandvika")

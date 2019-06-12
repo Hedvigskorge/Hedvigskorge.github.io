@@ -26,7 +26,7 @@
         <li><a href="hovedside.html">Hjem</a></li>
         <li><a href="registrerNy.html">Legg til nye turer</a></li>
         <li class="dropdown">
-          <button class="drop" onclick="visTurer">Turer</button>
+          <button class="drop" onclick="visTurer()">Turer</button>
           <div class="dropdown-innhold">
             <button onclick="visSandvika()">Sandvika</button>
             <button onclick="visKolsås()">Kolsås</button>
@@ -39,11 +39,13 @@
 
     <header>
       <h1>Opplev flotte turopplevelser i nærområdene ved Sandvika</h1>
-    </header>
-
-    <main>
       <button class="finnTur" onclick="visTurer()">Finn en tur som passer for deg</button>
+    </header>
+    <main class="gridhovedside">
+        <div class="sidepanel"></div>
+        <div id="hovedgrid"></div>
     </main>
+
     <script src="javascript.js"></script>
 
   </body>
