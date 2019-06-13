@@ -3,7 +3,7 @@
 nav{
   margin-top: 2%;
   margin-bottom:5%;
-}
+  }
 
 nav h2{
   text-align: center;
@@ -46,7 +46,6 @@ li button:hover,li a:hover, .dropdown:hover .drop {
   }
 
 .dropdown-innhold button {
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -75,7 +74,7 @@ header h1 {
   text-align: center;
   padding-top: 10%;
   padding-bottom: 19%;
-  text-shadow: 0 0 2px black;
+  text-shadow: 2 2 2px black;
   }
 
 .finnTur{
@@ -134,7 +133,7 @@ header h1 {
 .fjernSortering:hover{
   background-color: darkolivegreen;
   color: white;
-}
+  }
 
 #hovedgrid{
   text-align: center;
@@ -181,7 +180,7 @@ header h1 {
 .informerendetekst{
   margin-top: 40px;
   margin-bottom: 50px;
-}
+  }
 
 .slett{
   margin-left: 94%;
@@ -196,13 +195,14 @@ header h1 {
   background: url("bilder/tur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /*opacity: 0.5;*/
   }
 
 .bodyNyRegistrer a{
   font-size: 22px;
   color: white;
   margin-left: 1%;
+  background-color: black;
+  padding: 4px;
   }
 
 #skjema{
@@ -212,8 +212,23 @@ header h1 {
 
 #skjema input{
   font-size: 25px;
+  padding: 4px;
+  margin: 2px;
   }
 
 #skjema button{
   font-size: 25px;
+  padding: 4px;
+  }
+
+
+
+/*CSS til Responsiv*/
+@media (max-width: 600px){
+  #hovedgrid{
+    grid-template-columns: 1fr;
+    }
+  header h1 {
+    font-size: 40px;
+    }
   }

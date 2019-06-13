@@ -22,7 +22,7 @@
     <main>
       <a href="hovedside.html">Tilbake til Hovedsiden</a>
       <section class="registrer">
-        <!-- Lager skjema hvor man kan fylle inn informasjon til et nytt objekt-->
+        <!-- Lager skjema for å fylle inn informasjon til et nytt objekt-->
         <form id="skjema">
           <input id="Navn" type="text" required placeholder="Navn på turen">
           <input id="Lengde" type="text" required placeholder="Lengde (antall km)">
@@ -31,12 +31,12 @@
           <input id="Område" type="text" required placeholder="Område">
           <input id="Natur" type="text" required placeholder="Natur">
           <input id="Kart" type="text" required placeholder="Kart (link til maps)">
-          <button type="submit"><Registrer ny tur</button>
+          <button type="submit">Registrer ny tur</button>
         </form>
       </section>
     </main>
-    <script>
 
+    <script>
       // definerer variabel/navn for html elementene jeg trenger
       const skjema = document.querySelector("#skjema");
       const inptNavn = document.querySelector("#Navn");
@@ -64,12 +64,13 @@
         };
         //Kobler til riktig sted i database, angir primærnøkkel
         const tur = turer.child(nokkel);
-        //legger inn ny data i databasen
-        tur.set(data);  //inserter data
-        skjema.reset();  //resetter skjema
+        //inserter data
+        tur.set(data);
+        //resetter skjema
+        skjema.reset();
       }
 
-      // når vi sender submit (knappen), kjøres funksjonen registrerNy
+      // når man sender submit (knappen), kjøres funksjonen registrerNy
       skjema.addEventListener("submit", registrerNy);
     </script>
   </body>

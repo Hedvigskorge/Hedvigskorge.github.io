@@ -1,3 +1,4 @@
+
 //lagrer primærnøkkelen fra URL i en variable vi kaller id
 let url_string = window.location.href;
 let url = new URL (url_string);
@@ -42,9 +43,8 @@ tur.on("value",genererHTML);
 
 function slettTur(){
   tur.remove();
-}
-
+  }
 
 function goBack() {
   window.history.back();
-}
+  }
