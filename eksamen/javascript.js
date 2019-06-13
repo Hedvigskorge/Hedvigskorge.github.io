@@ -92,7 +92,6 @@ function visTurer() {
   function visSandvika() {
     header.innerHTML = "";
     hovedgrid.innerHTML = "";
-    console.log(turer);
     turer
     .orderByChild("Område")
     .equalTo("Sandvika")
